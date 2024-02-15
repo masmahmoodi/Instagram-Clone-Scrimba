@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+    font-family: "Source Sans 3", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+  button{
+    display: inline-block;
+    padding:5px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(68, 64, 64);
+    color: white;
+    margin:0px 3px;
+  }
+
+  header div{
+    padding: 5px;
+  }
+
+  header,main{
+    width: 50%;
+  }
+
+  .option{
+    width: 30px;
+    padding:0px 5px;
+  }
+
+  .about-user{
+    text-align: center;
+  }
+
+.account-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.story{
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 3px;
+}
+.highlights{
+  display: flex;
+  text-align: center;
+}
+.highlights div{
+ padding: 10px;
+}
+
+.mypost-img{
+    width: 150px;
+    height: 150px;
+    flex: 1 1 auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mypost-icon{
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.myposts{
+  display: flex;
+  gap: 5px;
+}
+
+
+@media (max-width:768px) {
+  header,main,footer{
+    width: 100%;
+  }
+  .myposts{
+    flex-wrap: wrap;
+  }
+  .resize-font{
+    font-size: 11px;
+  }
+
+  .option{
+    width: 25px;
+    padding:0px 5px;
+  }
+
+}
